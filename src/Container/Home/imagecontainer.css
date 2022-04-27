@@ -1,0 +1,20 @@
+.floating {
+  animation-name: floating;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+.image-container {
+  text-align: center;
+}
