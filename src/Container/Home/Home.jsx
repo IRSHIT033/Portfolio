@@ -16,6 +16,7 @@ const Home = () => {
           <ImageContainer />
         </Center>
       </Flex>
+      <img src={Wave} />
     </>
   );
 };

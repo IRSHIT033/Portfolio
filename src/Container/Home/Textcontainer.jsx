@@ -1,11 +1,13 @@
 import React from "react";
-import { Box, Stack, Heading, Flex, Square } from "@chakra-ui/react";
+import { Box, Stack, Heading, Flex, Square, Center } from "@chakra-ui/react";
 
 import "./textcontainer.css";
+import Typewriter from "typewriter-effect";
+
 const Textcontainer = () => {
   return (
     <>
-      <Box>
+      <Center bg="brand.900">
         <Stack>
           <Heading pl="1rem" className="Heading1">
             <span className="text-left-animation">Hi ! I am </span>
@@ -27,10 +29,27 @@ const Textcontainer = () => {
               <span class="E2">E</span>
               <span class="E3">E</span>
             </Square>
-            <p>I am a web developer</p>
+            <text>
+              <Typewriter
+                options={{
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Web Developer")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Problem Solver")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Designer")
+                    .start();
+                }}
+              />
+            </text>
           </Heading>
         </Stack>
-      </Box>
+      </Center>
     </>
   );
 };
