@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Menu } from "./Allmenu.js";
+import { Box } from "@chakra-ui/react";
 const variants = {
   open: {
     y: 0,
@@ -24,7 +25,7 @@ export const MenuItem = ({ i }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      {Menu[i]}
+      <Box>{Menu[i]}</Box>
     </motion.li>
   );
 };

@@ -4,10 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --secondary-color: #fbae3c;
   --primary-color: #001220;
   --grey-color: #99b898;
   --font-sz: 1.5rem;
+}
+
+body {
+  height: auto;
 }

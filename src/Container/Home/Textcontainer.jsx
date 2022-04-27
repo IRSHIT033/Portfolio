@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 const Textcontainer = () => {
   return (
     <>
-      <Center bg="brand.900">
+      <Center>
         <Stack>
           <Heading pl="1rem" className="Heading1">
             <span className="text-left-animation">Hi ! I am </span>
