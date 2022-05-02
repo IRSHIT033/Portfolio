@@ -18,24 +18,29 @@ const Home = () => {
         <Image src={lamp} w="90px" className="lamp" />
         <Box
           w="100vw"
-          h="100vh"
+          h="80vh"
           d={switchClicked ? "block" : "none"}
           p={2}
           className="lamp_light"
         />
       </Box>
-      <Flex flexDirection="column">
+      <Flex flexDirection="column" h="90vh" w="100vw">
         <Flex h="100vh" className="Home-container">
-          <Center w="50%">
+          <Center w={{ base: "100%", lg: "50%" }} mt={{ base: "3rem" }}>
             <Textcontainer />
           </Center>
-          <Center w="50%" d="flex" justifyContent="center" alignItems="center">
+          <Center
+            w={{ base: "100%", lg: "50%" }}
+            d="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
             <ImageContainer />
           </Center>
         </Flex>
-        <Flex marginTop="-20rem">
-          <img src={wave} className="wave-form" />
-        </Flex>
+      </Flex>
+      <Flex>
+        <img src={wave} className="wave-form" />
       </Flex>
     </>
   );

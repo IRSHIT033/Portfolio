@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Heading, Flex, Square, Center } from "@chakra-ui/react";
+import { Stack, Heading, Text, Square, Center } from "@chakra-ui/react";
 
 import "./textcontainer.css";
 import Typewriter from "typewriter-effect";
@@ -29,7 +29,7 @@ const Textcontainer = () => {
               <span class="E2">E</span>
               <span class="E3">E</span>
             </Square>
-            <text>
+            <Text>
               <Typewriter
                 options={{
                   loop: true,
@@ -46,7 +46,7 @@ const Textcontainer = () => {
                     .start();
                 }}
               />
-            </text>
+            </Text>
           </Heading>
         </Stack>
       </Center>
