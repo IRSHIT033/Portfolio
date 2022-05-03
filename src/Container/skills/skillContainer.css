@@ -1,9 +1,0 @@
-.rotate {
-  animation: circleRound 10s linear infinite;
-}
-
-@keyframes circleRound {
-  100% {
-    transform: rotate(360deg);
-  }
-}

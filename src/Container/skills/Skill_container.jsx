@@ -13,11 +13,9 @@ import expresslogo from "../../images/expressjs-icon.svg";
 import mysql from "../../images/mysql-icon.svg";
 import solidity from "../../images/light-solidity-svgrepo-com.svg";
 
-import "./skillContainer.css";
 import { motion } from "framer-motion";
 
 const Skill_container = () => {
-  const SkillArr = [reactLogo, cppLogo, jsLogo, dockerlogo, pythonlogo];
   return (
     <Box bg="brand.100" overflow="hidden">
       <Box
@@ -30,7 +28,7 @@ const Skill_container = () => {
       >
         <motion.div
           animate={{ rotate: 360 }}
-          transition={{ ease: "linear", duration: 7, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
         >
           <Center
             width="650px"
