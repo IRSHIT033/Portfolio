@@ -1,0 +1,27 @@
+.form-control {
+  width: 400px;
+  margin-top: "2rem";
+  height: 60px;
+  border: 0;
+  outline: 0;
+  color: #001220 !important;
+  font-weight: bold;
+  background: transparent;
+  border-bottom: 2px solid #001220;
+  background-color: transparent !important;
+}
+::placeholder {
+  color: #001220 !important;
+  text-align: center;
+}
+
+.form-control:focus {
+  background-color: transparent !important;
+}
+
+.btn-submit {
+  padding: 10px 30px;
+  margin: 1rem;
+  background-color: #001220;
+  border-radius: 25px;
+}

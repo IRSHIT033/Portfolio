@@ -1,6 +1,6 @@
 .lamp {
   position: absolute;
-  top: -1%;
+  top: -0.5%;
   right: 3.5vw;
   z-index: 12;
   transform: rotate(40deg);

@@ -1,0 +1,4 @@
+.title {
+  -webkit-text-stroke: 3px var(--secondary-color);
+  letter-spacing: 5px;
+}
