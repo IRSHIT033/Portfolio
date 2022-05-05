@@ -36,7 +36,7 @@ const ProjectsSEction = ({
             justifyContent="center"
             alignItems="center"
             overflow="hidden"
-            ml="3.5rem"
+            ml={{ base: "0", lg: "3.5rem" }}
           >
             <Box
               w={{ base: "60%", md: "60%", lg: "50%" }}
@@ -57,7 +57,7 @@ const ProjectsSEction = ({
               </video>
             </Box>
 
-            <Box w={{ base: "60%", lg: "40%" }} m="0rem">
+            <Box w={{ base: "100%", lg: "40%" }} mx="auto">
               <Box p={{ base: "0.5rem", lg: "2rem" }}>
                 <Text
                   textAlign={{ base: "center", md: "left" }}

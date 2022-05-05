@@ -18,8 +18,12 @@ const Home = () => {
         <Image src={lamp} w="90px" className="lamp" />
         <Box
           w="100vw"
-          h="80vh"
-          d={switchClicked ? "block" : "none"}
+          h="90vh"
+          d={{
+            base: "none",
+            md: "none",
+            lg: switchClicked ? "block" : "none",
+          }}
           p={2}
           className="lamp_light"
         />

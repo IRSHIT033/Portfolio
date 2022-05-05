@@ -1,14 +1,17 @@
 import { Image, Box, Heading, Center } from "@chakra-ui/react";
-import wave3 from "../../images/wave3.svg";
+
 import wave4 from "../../images/wave4.svg";
-import React, { useRef } from "react";
+import { Spinner } from "@chakra-ui/react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./form.css";
 
 const FeedbackContainer = () => {
+  const [loading, Setloading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
+    Setloading(true);
     e.preventDefault();
 
     emailjs
@@ -22,14 +25,17 @@ const FeedbackContainer = () => {
         (result) => {
           form.current.reset();
           console.log(result.text);
+          Setloading(false);
         },
         (error) => {
           console.log(error.text);
+          Setloading(false);
         }
       );
   };
   return (
     <>
+      <Image src={wave4} />
       <Box bg="brand.100" justifyContent="center" h="auto">
         <Heading textAlign="Center" color="brand.200">
           Send FeedBack
@@ -54,8 +60,13 @@ const FeedbackContainer = () => {
             />
             <br></br>
             <Center>
-              <input type="submit" value="Send" className="btn-submit" />
+              {loading ? (
+                <Spinner color="brand.200" m={5} />
+              ) : (
+                <input type="submit" value="Send" className="btn-submit" />
+              )}
             </Center>
+            {/* <Spinner color="brand.200" /> */}
             <br></br>
           </form>
         </Center>

@@ -25,3 +25,9 @@
   background-color: #001220;
   border-radius: 25px;
 }
+
+@media screen and (max-width: 499px) {
+  .form-control {
+    width: 300px;
+  }
+}
