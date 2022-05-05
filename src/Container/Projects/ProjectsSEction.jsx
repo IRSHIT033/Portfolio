@@ -1,7 +1,7 @@
 import { Flex, Box, Text, Center, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import githublogo from "../../images/iconmonstr-github-1.svg";
-
+import { motion } from "framer-motion";
 const ProjectsSEction = ({
   idx,
   videoSrc,
@@ -58,7 +58,18 @@ const ProjectsSEction = ({
             </Box>
 
             <Box w={{ base: "100%", lg: "40%" }} mx="auto">
-              <Box p={{ base: "0.5rem", lg: "2rem" }}>
+              <Box
+                p={{ base: "0.5rem", lg: "2rem" }}
+                as={motion.div}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 2 }}
+                variants={{
+                  visible: { x: 0 },
+                  hidden: idx % 2 == 0 ? { x: -100 } : { x: 100 },
+                }}
+              >
                 <Text
                   textAlign={{ base: "center", md: "left" }}
                   fontSize={{ base: "1.5rem", lg: "2rem" }}
@@ -73,6 +84,7 @@ const ProjectsSEction = ({
                   pt={5}
                 >
                   {info}
+
                   <Text fontweight="bold">
                     <b>Tech Stack :-</b> {techStack}
                   </Text>

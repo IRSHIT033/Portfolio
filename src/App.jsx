@@ -6,12 +6,13 @@ import { Customtheme } from "./Theme/Customtheme";
 import Skill_section from "./Container/skills/Skill_section";
 import ProjectsContainer from "./Container/Projects/ProjectsContainer";
 import FeedbackContainer from "./Container/SendFeedback/FeedbackContainer";
+import { SidebarSocial } from "./Container/SocialMediaSideBar/SidebarSocial";
 const App = () => {
   return (
     <>
       <ChakraProvider resetCss={true} theme={Customtheme}>
         <Nav />
-        {/* <SidebarSocial /> */}
+        <SidebarSocial />
         <Home />
         <Skill_section />
         <ProjectsContainer />
