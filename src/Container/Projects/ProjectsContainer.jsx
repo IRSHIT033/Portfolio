@@ -3,6 +3,7 @@ import chatAppvideo from "../../ProjectVideos/ChatAppvideo.mp4";
 import ScreeenRecordervideo from "../../ProjectVideos/ScreenrecorderPrjct.mp4";
 import ProjectsSEction from "./ProjectsSEction";
 import ingenium from "../../ProjectVideos/AotIngenium.mp4";
+import CureConenctvdo from "../../ProjectVideos/CureConnect (2).mp4";
 import "./font.css";
 
 const ProjectsContainer = () => {
@@ -30,7 +31,7 @@ const ProjectsContainer = () => {
         "https://github.com/Utkarshi-Development-Team/Ingenium-Website-2021",
     },
     {
-      videoSrc: "",
+      videoSrc: CureConenctvdo,
       Title: "Cure Connect",
       Info: "This is realtime video conferencing webApp.Where a patient can consult with their doctor in Video Chat. For implementing Realtime communication we used webRTC and socket Io. In authentication used JWT and SAWO tool.  ",
       TechStack: "REACT, MONGODB, NODEJS, EXPRESSJS",

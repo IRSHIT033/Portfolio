@@ -14,7 +14,7 @@ const App = () => {
         <Nav />
 
         <Home />
-        <Skill_section id="Skills" />
+        <Skill_section />
         <ProjectsContainer />
         <FeedbackContainer />
       </ChakraProvider>

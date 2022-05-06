@@ -54,7 +54,7 @@ const FeedbackContainer = () => {
               name="user_email"
               placeholder="enter your email here"
               className="form-control"
-              autocomplete="off"
+              autoComplete="off"
             />
             <br></br>
 
@@ -62,7 +62,7 @@ const FeedbackContainer = () => {
               name="message"
               placeholder="write down your reviews"
               className="form-control"
-              autocomplete="off"
+              autoComplete="off"
             />
             <br></br>
             <Center>

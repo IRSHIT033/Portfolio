@@ -10,14 +10,6 @@ const ProjectsSEction = ({
   techStack,
   Githubsrc,
 }) => {
-  {
-    /*<Heading
-            fontSize={{ base: "5rem", md: "7rem" }}
-            textShadow="5px 5px #558abb;"
-          >
-            {"0" + idx}
-          </Heading>*/
-  }
   return (
     <>
       <Box w="100%">
@@ -85,9 +77,7 @@ const ProjectsSEction = ({
                 >
                   {info}
 
-                  <Text fontweight="bold">
-                    <b>Tech Stack :-</b> {techStack}
-                  </Text>
+                  <Text fontWeight="bold">Tech Stack :- {techStack}</Text>
                 </Text>
                 <br></br>
                 <Center

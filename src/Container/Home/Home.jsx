@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, Image, Flex, Box, Center, GridItem } from "@chakra-ui/react";
+import { Image, Flex, Box, Center } from "@chakra-ui/react";
 import Textcontainer from "./Textcontainer";
 import "./Home.css";
 import ImageContainer from "./ImageContainer";

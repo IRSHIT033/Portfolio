@@ -13,22 +13,22 @@ const Textcontainer = () => {
             <Heading pl="1rem" className="Heading1">
               <span className="text-left-animation">Hi ! I am </span>
               <Square id="text-drop">
-                <span class="I">I</span>
-                <span class="R">R</span>
-                <span class="S">S</span>
-                <span class="H">H</span>
-                <span class="I2">I</span>
-                <span class="T">T</span>
-                <span class="_">&nbsp; </span>
-                <span class="M">M</span>
-                <span class="U">U</span>
-                <span class="K">K</span>
-                <span class="H2">H</span>
-                <span class="E">E</span>
-                <span class="R2">R</span>
-                <span class="J">J</span>
-                <span class="E2">E</span>
-                <span class="E3">E</span>
+                <span className="I">I</span>
+                <span className="R">R</span>
+                <span className="S">S</span>
+                <span className="H">H</span>
+                <span className="I2">I</span>
+                <span className="T">T</span>
+                <span className="_">&nbsp; </span>
+                <span className="M">M</span>
+                <span className="U">U</span>
+                <span className="K">K</span>
+                <span className="H2">H</span>
+                <span className="E">E</span>
+                <span className="R2">R</span>
+                <span className="J">J</span>
+                <span className="E2">E</span>
+                <span className="E3">E</span>
               </Square>
               <Text>
                 <Typewriter
