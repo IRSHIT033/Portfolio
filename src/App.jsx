@@ -12,9 +12,9 @@ const App = () => {
     <>
       <ChakraProvider resetCss={true} theme={Customtheme}>
         <Nav />
-        <SidebarSocial />
+
         <Home />
-        <Skill_section />
+        <Skill_section id="Skills" />
         <ProjectsContainer />
         <FeedbackContainer />
       </ChakraProvider>

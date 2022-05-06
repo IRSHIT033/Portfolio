@@ -64,7 +64,7 @@ const ProjectsSEction = ({
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 2 }}
+                transition={{ ease: "easeOut", duration: 3, delay: 0.5 }}
                 variants={{
                   visible: { x: 0 },
                   hidden: idx % 2 == 0 ? { x: -100 } : { x: 100 },

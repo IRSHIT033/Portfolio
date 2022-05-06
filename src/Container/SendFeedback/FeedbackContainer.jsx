@@ -36,8 +36,14 @@ const FeedbackContainer = () => {
   return (
     <>
       <Image src={wave4} />
-      <Box bg="brand.100" justifyContent="center" h="auto">
-        <Heading textAlign="Center" color="brand.200">
+      <Center
+        bg="brand.100"
+        justifyContent="center"
+        h="60vh"
+        flexDirection="column"
+        id="Contact"
+      >
+        <Heading textAlign="Center" color="brand.200" m="1.5rem">
           Send FeedBack
         </Heading>
 
@@ -70,7 +76,7 @@ const FeedbackContainer = () => {
             <br></br>
           </form>
         </Center>
-      </Box>
+      </Center>
     </>
   );
 };

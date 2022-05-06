@@ -3,7 +3,7 @@ import React from "react";
 
 const Title = ({ title }) => {
   return (
-    <Center bg="brand.100" marginTop="auto">
+    <Center bg="brand.100" marginTop="auto" id="Skills">
       <Text
         color="black"
         fontSize="3.5rem"

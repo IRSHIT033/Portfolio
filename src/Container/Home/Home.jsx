@@ -28,7 +28,7 @@ const Home = () => {
           className="lamp_light"
         />
       </Box>
-      <Flex flexDirection="column" h="90vh" w="100vw">
+      <Flex flexDirection="column" h="100vh" w="100vw" id="Home">
         <Flex h="100vh" className="Home-container">
           <Center w={{ base: "100%", lg: "50%" }} mt={{ base: "3rem" }}>
             <Textcontainer />

@@ -18,14 +18,16 @@ const variants = {
   },
 };
 
-export const MenuItem = ({ i }) => {
+export const MenuItem = ({ i, path }) => {
   return (
     <motion.li
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Box>{Menu[i]}</Box>
+      <a href={"#" + Menu[i]}>
+        <Box>{Menu[i]}</Box>
+      </a>
     </motion.li>
   );
 };

@@ -27,8 +27,8 @@ const Skill_container = () => {
         borderRadius="50%"
       >
         <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+        /*  animate={{ rotate: 360 }}
+          transition={{ ease: "linear", duration: 20, repeat: Infinity }}*/
         >
           <Center
             width="650px"

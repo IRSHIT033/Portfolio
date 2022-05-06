@@ -7,7 +7,7 @@ import { Image } from "@chakra-ui/react";
 const Skill_section = () => {
   return (
     <>
-      <Title title={"SKILLS"} />
+      <Title title={"SKILLS"} id="Skills" />
       <Skill_container />
       <Card_section />
       <Image src={wave2} />
