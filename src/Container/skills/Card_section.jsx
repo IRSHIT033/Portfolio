@@ -56,10 +56,18 @@ export const Card_section = () => {
     mysql,
     SockerIo,
   ];
-  const othersIMgs = [other, giticon, cppLogo, c_lang, solidity, python];
-  const others = ["", "GIT", "C++", "C", "SOLIDITY", "PYTHON"];
+  const othersIMgs = [
+    other,
+    dockerlogo,
+    giticon,
+    cppLogo,
+    c_lang,
+    solidity,
+    python,
+  ];
+  const others = ["", "DOCKER", "GIT", "C++", "C", "SOLIDITY", "PYTHON"];
   const backendnames = ["", "NODE", "EXPRESS", "MONGODB", "MYSQL", "SOCKET IO"];
-  const devopsImgs = [devops_img, dockerlogo];
+  const devopsImgs = [devops_img];
   const dev_ops_names = ["", "DOCKER"];
   return (
     <Center bg="brand.100" w="100vw">
@@ -110,32 +118,6 @@ export const Card_section = () => {
                     idx={idx}
                     height={idx != 0 ? "25px" : "65px"}
                     name={backendnames[idx]}
-                  />
-                );
-              })}
-            </VStack>
-          </Box>
-        </Center>
-        <Center>
-          <Box
-            height="600px"
-            width="22rem"
-            bg="brand.200"
-            overflow="hidden"
-            borderRadius="15px"
-          >
-            <VStack>
-              <Text p={2} fontSize="1.5rem">
-                DevOps
-              </Text>
-              {devopsImgs.map((i, idx) => {
-                return (
-                  <SkillStack
-                    pics={i}
-                    key={idx + 100}
-                    idx={idx}
-                    height={idx != 0 ? "35px" : "65px"}
-                    name={dev_ops_names[idx]}
                   />
                 );
               })}

@@ -1,5 +1,6 @@
 import { Image, Box, Heading, Center } from "@chakra-ui/react";
-
+import Lottie from "react-lottie";
+import EYE from "../../Animation/EYE.json";
 import wave4 from "../../images/wave4.svg";
 import { Spinner } from "@chakra-ui/react";
 import React, { useRef, useState } from "react";
@@ -7,6 +8,14 @@ import emailjs from "@emailjs/browser";
 import "./form.css";
 
 const FeedbackContainer = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: EYE,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const [loading, Setloading] = useState(false);
   const form = useRef();
 
