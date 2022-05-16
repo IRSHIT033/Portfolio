@@ -37,6 +37,14 @@ const ProjectsContainer = () => {
       TechStack: "REACT, MONGODB, NODEJS, EXPRESSJS",
       Githubsrc: "https://github.com/rwiteshbera/Cure-Connect-Hack-The-League",
     },
+    {
+      videoSrc:
+        "https://ik.imagekit.io/dgyjhsxq7/Sol-1__1__-_Copy_v9uTb4RmH.m4v?ik-sdk-version=javascript-1.4.3&updatedAt=1652716321687",
+      Title: "SOLGUIDE",
+      Info: "Our web-app lands with a login/ signup page(user can switch between two according to their convenience). After the user has logged in, the dashboard of the user comes up where it shows the username, email and number of contributions of the respective user. It has been implemented using Appwrite SDK. We then have our most interesting part of the web-app which is the 'Contribtion' section where user can answer to the problems asked by an author in real-time. User can also be an author and post their respective doubts or the problem they are facing in the code(user are also allowed to attach their code screenshots). ",
+      TechStack: "REACT, APPWRITE SDK TOOL (WEB)",
+      Githubsrc: "https://github.com/IRSHIT033/Appwrite",
+    },
   ];
   return (
     <>
