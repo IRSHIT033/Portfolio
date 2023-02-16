@@ -6,8 +6,8 @@ import {
   VStack,
   HStack,
 } from "@chakra-ui/react";
-import AOS from "aos";
 
+import { motion } from "framer-motion";
 import SkillStack from "./SkillStack";
 import React, { useEffect } from "react";
 import SockerIo from "../../images/cdnlogo.com_socket-io.svg";
@@ -38,7 +38,7 @@ import grpclogo from "../../images/grpcio-ar21.svg";
 import bashlogo from "../../images/icons8-bash.svg";
 
 import githubactionlogo from "../../images/githubactions-svgrepo-com.svg";
-import "aos/dist/aos.css";
+
 export const Card_section = () => {
   const FrontendImgs = [
     frontend_img,
@@ -105,17 +105,25 @@ export const Card_section = () => {
     "NGINX",
     "GRPC",
   ];
-  useEffect(() => {
-    AOS.init({ duration: 2000, once: false, mirror: true });
-  }, []);
 
   return (
     <Center bg="brand.100" w="100vw">
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={5} w="100%" my={10}>
-        <Center data-aos="fade-right">
+      <SimpleGrid
+        overflow="hidden"
+        columns={{ base: 1, md: 2, lg: 3 }}
+        gap={5}
+        w="100%"
+        my={10}
+      >
+        <Center
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateX(-100px)" }}
+          whileInView={{ opacity: 1, transform: "translateX(0px)" }}
+          transition="0.8s ease-in-out"
+        >
           <Box
-            height="600px"
-            width="22rem"
+            height="550px"
+            width="20rem"
             overflow="hidden"
             borderRadius="15px"
             bg="brand.200"
@@ -142,10 +150,15 @@ export const Card_section = () => {
           </Box>
         </Center>
 
-        <Center data-aos="fade-up">
+        <Center
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateY(100px)" }}
+          whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+          transition="0.8s ease-in-out"
+        >
           <Box
-            height="600px"
-            width="22rem"
+            height="550px"
+            width="20rem"
             bg="brand.200"
             overflow="hidden"
             borderRadius="15px"
@@ -168,10 +181,16 @@ export const Card_section = () => {
             </VStack>
           </Box>
         </Center>
-        <Center data-aos="fade-left">
+
+        <Center
+          as={motion.div}
+          initial={{ opacity: 0, transform: "translateX(100px)" }}
+          whileInView={{ opacity: 1, transform: "translateX(0px)" }}
+          transition="0.8s ease-in-out"
+        >
           <Box
-            height="600px"
-            width="22rem"
+            height="550px"
+            width="20rem"
             bg="brand.200"
             overflow="hidden"
             borderRadius="15px"

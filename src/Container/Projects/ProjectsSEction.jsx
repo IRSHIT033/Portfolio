@@ -7,6 +7,7 @@ import {
   Image,
   Button,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 import githublogo from "../../images/iconmonstr-github-1.svg";
 const ProjectsSEction = ({
@@ -17,6 +18,7 @@ const ProjectsSEction = ({
   techStack,
   Githubsrc,
 }) => {
+  console.log(idx % 2);
   return (
     <>
       <Box w="100%">
@@ -41,7 +43,6 @@ const ProjectsSEction = ({
               w={{ base: "60%", md: "60%", lg: "50%" }}
               borderRadius="15px"
               mx="auto"
-              data-aos={idx % 2 ? "fade-right" : "fade-left"}
             >
               <video
                 resizemode={"cover"}
@@ -57,7 +58,18 @@ const ProjectsSEction = ({
               </video>
             </Box>
 
-            <Box w={{ base: "100%", lg: "40%" }} mx="auto">
+            <Box
+              w={{ base: "100%", lg: "40%" }}
+              mx="auto"
+              as={motion.div}
+              initial={{
+                opacity: 0,
+                transform:
+                  idx % 2 === 0 ? "translateX(-100px)" : "translateX(100px)",
+              }}
+              whileInView={{ opacity: 1, transform: "translateX(0px)" }}
+              transition="0.8s ease-in-out"
+            >
               <Box p={{ base: "0.5rem", lg: "2rem" }}>
                 <Text
                   textAlign={{ base: "center", md: "left" }}
