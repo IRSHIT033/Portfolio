@@ -41,9 +41,17 @@ const ProjectsContainer = () => {
       videoSrc:
         "https://ik.imagekit.io/dgyjhsxq7/Sol-1__1__-_Copy_v9uTb4RmH.m4v?ik-sdk-version=javascript-1.4.3&updatedAt=1652716321687",
       Title: "SOLGUIDE",
-      Info: "Our web-app lands with a login/ signup page(user can switch between two according to their convenience). After the user has logged in, the dashboard of the user comes up where it shows the username, email and number of contributions of the respective user. It has been implemented using Appwrite SDK. We then have our most interesting part of the web-app which is the 'Contribtion' section where user can answer to the problems asked by an author in real-time. User can also be an author and post their respective doubts or the problem they are facing in the code(user are also allowed to attach their code screenshots). ",
+      Info: "This is a doubt solving WebApp where people can solve their doubts by posting it to the feed and others will help them in realtime communication system ",
       TechStack: "REACT, APPWRITE SDK TOOL (WEB)",
       Githubsrc: "https://github.com/IRSHIT033/Appwrite",
+    },
+    {
+      videoSrc:
+        "https://ik.imagekit.io/egfxwp4jill/videoplayback_Xhziuqh7_.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1676536818395",
+      Title: "Decent Mail",
+      Info: "Decent Mail is which is built on blockchain rather than a normal smtp server. Allows users to e-mail a smart contract that will be generated and accepted peer to peer via e-mail. Users can control & manage their data and information. ",
+      TechStack: "React Ethers.js Polygon Solidity Filecoin Alchemy",
+      Githubsrc: "https://github.com/IRSHIT033/Hacking-Heist-2.0__Decent_mail",
     },
   ];
   return (

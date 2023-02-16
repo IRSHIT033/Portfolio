@@ -1,6 +1,15 @@
-import { SimpleGrid, Text, Box, Center, VStack } from "@chakra-ui/react";
+import {
+  SimpleGrid,
+  Text,
+  Box,
+  Center,
+  VStack,
+  HStack,
+} from "@chakra-ui/react";
+import AOS from "aos";
+
 import SkillStack from "./SkillStack";
-import React from "react";
+import React, { useEffect } from "react";
 import SockerIo from "../../images/cdnlogo.com_socket-io.svg";
 import frontend_img from "../../images/illustration.png";
 import server_img from "../../images/server.png";
@@ -13,7 +22,7 @@ import Mongodblogo from "../../images/mongodb-svgrepo-com.svg";
 import dockerlogo from "../../images/docker-logo-svgrepo-com.svg";
 import html5glogo from "../../images/html5-svgrepo-com.svg";
 import css3logo from "../../images/css3-svgrepo-com.svg";
-import expresslogo from "../../images/expressjs-icon.svg";
+import goLanglogo from "../../images/Go-Logo_Blue.svg";
 import mysql from "../../images/mysql-icon.svg";
 import bootstrap from "../../images/bootstrap-4-logo-svgrepo-com.svg";
 import sass from "../../images/sass-svgrepo-com.svg";
@@ -24,7 +33,12 @@ import c_lang from "../../images/c-program.svg";
 import solidity from "../../images/light-solidity-svgrepo-com.svg";
 import python from "../../images/python.png";
 import other from "../../images/code-svgrepo-com.svg";
+import nginxlogo from "../../images/nginx-icon.svg";
+import grpclogo from "../../images/grpcio-ar21.svg";
+import bashlogo from "../../images/icons8-bash.svg";
 
+import githubactionlogo from "../../images/githubactions-svgrepo-com.svg";
+import "aos/dist/aos.css";
 export const Card_section = () => {
   const FrontendImgs = [
     frontend_img,
@@ -37,6 +51,7 @@ export const Card_section = () => {
     bootstrap,
     chakraui,
   ];
+
   const Frontendname = [
     "",
     "HTML",
@@ -51,10 +66,12 @@ export const Card_section = () => {
   const BackgendImgs = [
     server_img,
     NodeLogo,
-    expresslogo,
+    goLanglogo,
     Mongodblogo,
     mysql,
     SockerIo,
+    nginxlogo,
+    grpclogo,
   ];
   const othersIMgs = [
     other,
@@ -64,15 +81,38 @@ export const Card_section = () => {
     c_lang,
     solidity,
     python,
+    githubactionlogo,
+    bashlogo,
   ];
-  const others = ["", "DOCKER", "GIT", "C++", "C", "SOLIDITY", "PYTHON"];
-  const backendnames = ["", "NODE", "EXPRESS", "MONGODB", "MYSQL", "SOCKET IO"];
-  const devopsImgs = [devops_img];
-  const dev_ops_names = ["", "DOCKER"];
+  const others = [
+    "",
+    "DOCKER",
+    "GIT",
+    "C++",
+    "C",
+    "SOLIDITY",
+    "PYTHON",
+    "GITHUB_ACTION",
+    "BASH",
+  ];
+  const backendnames = [
+    "",
+    "NODE",
+    "GO",
+    "MONGODB",
+    "MYSQL",
+    "SOCKET IO",
+    "NGINX",
+    "GRPC",
+  ];
+  useEffect(() => {
+    AOS.init({ duration: 2000, once: false, mirror: true });
+  }, []);
+
   return (
     <Center bg="brand.100" w="100vw">
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={5} w="100%" my={10}>
-        <Center>
+        <Center data-aos="fade-right">
           <Box
             height="600px"
             width="22rem"
@@ -81,9 +121,12 @@ export const Card_section = () => {
             bg="brand.200"
           >
             <VStack>
-              <Text p={2} fontSize="1.5rem">
-                Frontend
-              </Text>
+              <Center>
+                <Text p={2} fontSize="1.5rem">
+                  Frontend
+                </Text>
+              </Center>
+
               {FrontendImgs.map((i, idx) => {
                 return (
                   <SkillStack
@@ -98,7 +141,8 @@ export const Card_section = () => {
             </VStack>
           </Box>
         </Center>
-        <Center>
+
+        <Center data-aos="fade-up">
           <Box
             height="600px"
             width="22rem"
@@ -124,7 +168,7 @@ export const Card_section = () => {
             </VStack>
           </Box>
         </Center>
-        <Center>
+        <Center data-aos="fade-left">
           <Box
             height="600px"
             width="22rem"
